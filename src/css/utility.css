@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+:root {
+    --app-black: #1c1d20;
+    --app-white: #fff;
+    --app-brown: #D9BF77;
+    --app-blue: #111235;
+    --app-orange: #ffb328;
+}
+
+.container {
+    width: min(100% - 20px, 1200px);
+    margin-inline: auto;
+}
