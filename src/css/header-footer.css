@@ -31,6 +31,10 @@ html {
 }
 
 /* Header */
+header {
+    background-color: var(--app-white);
+}
+
 header .container {
     display: grid;
     align-items: center;
@@ -40,6 +44,7 @@ header .container {
 
 .title-logo {
     font-family: "Berkshire Swash", serif;
+    color: var(--app-orange);
 }
 
 nav {
@@ -58,8 +63,9 @@ nav a {
 .header-buttons {
     justify-self: end;
     display: flex;
-    gap: 10px;
-    color: #000000cb;
+    gap: 20px;
+    color: #000000;
+    font-size: 20px;
 }
 
 /* footer */
@@ -70,7 +76,6 @@ footer {
 footer .container {
     padding: var(--app-section-space);
     color: var(--app-white);
-    padding: 0;
     display: grid;
     grid-template-columns: 1fr 200px 200px 1fr;
 }
@@ -147,3 +152,19 @@ footer .container {
     justify-content: center;
     align-items: center;
 }
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+.payment-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img:nth-of-type(1) {
+        height: 40px;
+    }
+}
+

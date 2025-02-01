@@ -4,7 +4,10 @@
     --app-black: #1c1d20;
     --app-white: #fff;
     --app-orange: #ffb328;
-    --app-section-space: 50px;
+}
+
+.section-space {
+    padding: 50px 0;
 }
 
 .container {
