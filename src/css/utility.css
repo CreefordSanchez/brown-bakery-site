@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+:root {
+    --app-black: #1c1d20;
+    --app-white: #fff;
+    --app-orange: #ffb328;
+}
+
+.section-space {
+    padding: 50px 0;
+}
+
+.container {
+    width: min(100% - 20px, 1100px);
+    margin-inline: auto;
+}

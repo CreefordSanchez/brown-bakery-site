@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+@import url(./utility.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    font-family: "Poppins", serif;
+}
+
+html {
+    font-family: "Poppins", serif;
+}
+
+/* Header */
+header {
+    background-color: var(--app-white);
+}
+
+header .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+}
+
+.title-logo {
+    font-family: "Berkshire Swash", serif;
+    color: var(--app-orange);
+}
+
+nav {
+    justify-self: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--app-black);
+}
+
+.header-buttons {
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* footer */
+footer {
+    background-color: var(--app-black);
+}
+
+footer .container {
+    padding: var(--app-section-space);
+    color: var(--app-white);
+    display: grid;
+    grid-template-columns: 1fr 200px 200px 1fr;
+}
+
+.contact-info {
+    justify-self: start;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    gap: 5px;
+    
+    i {
+        font-size: 12px;
+    }
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--app-orange);
+    padding-bottom: 10px;
+}
+
+.media-links-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.media-icon {
+    background-color: #181818;
+    height: 36px;
+    width: 36px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--app-white);
+}
+
+.footer-links li {
+    padding-bottom: 5px;
+
+    a {
+        color: var(--app-white);
+    }
+}
+
+.email-input {
+    display: flex;
+    height: 44px;
+    background-color: var(--app-white);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.email-input input {
+    background-color: #00000000;
+    color: var(--app-black);
+    width: 100%;
+    padding: 5px;
+}
+
+.email-button {
+    background-color: var(--app-orange);
+    color: var(--app-white);
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+.payment-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img:nth-of-type(1) {
+        height: 40px;
+    }
+}
+
