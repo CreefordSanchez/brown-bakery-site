@@ -1,0 +1,25 @@
+@import url(./utility.css);
+
+.product-content {
+    height: calc(100vh - 72px);
+    background-color: var(--app-orange);
+}
+
+.product-content .container {
+    height: 100%;
+}
+
+.product-category {
+    height: 100px;
+}
+
+.category {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: calc(100% - 100px);
+}
