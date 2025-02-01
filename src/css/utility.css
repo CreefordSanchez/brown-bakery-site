@@ -3,12 +3,11 @@
 :root {
     --app-black: #1c1d20;
     --app-white: #fff;
-    --app-brown: #D9BF77;
-    --app-blue: #111235;
     --app-orange: #ffb328;
+    --app-section-space: 50px;
 }
 
 .container {
-    width: min(100% - 20px, 1200px);
+    width: min(100% - 20px, 1100px);
     margin-inline: auto;
 }

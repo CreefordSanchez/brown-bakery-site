@@ -8,20 +8,3 @@
     padding: 0;
     box-sizing: border-box;
 }  
-
-box {
-    width: 100px;
-    height: 100px;
-}
-
-.box1 {
-    background-color: var(--app-);
-}
-
-.box2 {
-    background-color: var(--app-black);
-}
-
-.box3 {
-    background-color: var(--app-orange);
-}
