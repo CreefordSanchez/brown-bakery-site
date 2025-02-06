@@ -26,29 +26,32 @@
 
 .product-list {
     display: grid;
-    column-gap: 15px;
+    column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: calc(100% - 90px);
 }
 
 .product-item {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 15px 0px;
     padding: 6px 8px;
     background-color: var(--app-white);
+    border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .product-image {
+    flex: 3;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
 .product-description {
-    height: 100%;
+    flex: 1;
     padding: 10px 0px;
 }
 
