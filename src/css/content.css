@@ -2,7 +2,7 @@
 
 .product-content {
     height: calc(100vh - 72px);
-    background-image: url(../media/image/bakery-items3.jpg);
+    background-image: url(../media/image/bakery-items1.jpg);
     background-position: center;
     background-size: 35%;
 }
@@ -38,16 +38,16 @@
 .product-item {
     display: flex;
     flex-direction: column;
-    margin: 15px 0px;
     padding: 6px 8px;
     background-color: var(--app-white);
     border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Conforming to grid-cell size */
+    min-width: 0; /* Conforming to grid-cell size */
 }
 
 .product-image {
     flex: 3;
-    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -55,7 +55,7 @@
 
 .product-description {
     flex: 1;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .product-name {
@@ -70,19 +70,20 @@
 
 .product-price {
     display: inline-block;
+    color: rgb(53, 53, 53);
     font-size: 18px;
     font-weight: 700;
-    color: rgb(53, 53, 53);
 }
 
 .product-serving {
     display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
     color: rgb(105, 105, 105);
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .product-preview-button {
+    background-color: white;
     width: 35%;
     height: 40px;
     border: 1px solid grey;
@@ -90,11 +91,11 @@
     font-size: 14px;
     font-weight: 600;
     font-family: "Poppins", serif;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 5px 0px;
     transition: 0.1s ease-in;
 }
 
 .product-preview-button:hover {
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(231, 231, 231);
 }
