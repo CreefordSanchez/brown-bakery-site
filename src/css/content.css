@@ -2,8 +2,9 @@
 
 .product-content {
     height: calc(100vh - 72px);
-    background-image: url(../media/image/bakery-items2.jpg);
-    background-color: var(--app-orange);
+    background-image: url(../media/image/bakery-items3.jpg);
+    background-position: center;
+    background-size: 35%;
 }
 
 .product-content .container {
@@ -11,7 +12,7 @@
 }
 
 .background-overlay {
-    background-color: #ffb428bf;
+    background-color: #8e4508db;
     height: 100%;
 }
 
@@ -21,12 +22,8 @@
 
 .product-category-name {
     justify-items: center;
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.category {
-    font-size: 28px;
+    color: white;
+    font-size: 42px;
     font-weight: 700;
 }
 
@@ -67,15 +64,26 @@
     margin: 5px 0px;
 }
 
-.product-price {
-    font-size: 18px;
-    font-weight: 700;
-    color: rgb(53, 53, 53);
+.product-sub-description {
     margin: 5px 0px;
 }
 
+.product-price {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(53, 53, 53);
+}
+
+.product-serving {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+}
+
 .product-preview-button {
-    width: 100%;
+    width: 35%;
     height: 40px;
     border: 1px solid grey;
     border-radius: 4px;
