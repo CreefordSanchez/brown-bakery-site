@@ -4,6 +4,7 @@
     --app-black: #1c1d20;
     --app-white: #fff;
     --app-orange: #ffb328;
+    --app-brown: #d0671c;
 }
 
 .section-space {
@@ -13,4 +14,12 @@
 .container {
     width: min(100% - 20px, 1100px);
     margin-inline: auto;
+}
+
+.break {
+    display: block;
+}
+
+.word-brown {
+    color: var(--app-orange);
 }
