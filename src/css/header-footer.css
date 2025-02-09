@@ -32,7 +32,8 @@ html {
 
 /* Header */
 header {
-    background-color: var(--app-white);
+    background-color: var(--app-black);
+    transition: 0.5s ease;
 }
 
 header .container {
@@ -66,6 +67,11 @@ nav a {
     gap: 20px;
     color: #000000;
     font-size: 20px;
+}
+
+.header-fixed {
+    position: fixed;
+    background-color: var(--app-black);
 }
 
 /* footer */
