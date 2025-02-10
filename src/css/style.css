@@ -27,7 +27,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh + 100px);
 }
 
 .hero-overlay {
@@ -48,4 +48,41 @@ header {
 
 .hero p {
     font-size: 20px;
+}
+
+/*About Us sectinon*/
+.about-us-section {
+    background-color: #fffaf0;
+}
+.list-types-of-meals {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    gap: 15px;
+}
+
+.meal-box {
+    background-color: var(--app-orange);
+    height: 310px;
+    width: 300px;
+}
+
+.about-us-headline {
+    text-align: center;
+    color: #1f1f1f;
+    display: grid;
+    justify-items: center;
+}
+
+.about-us-headline h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: var(--app-orange);
+    padding-bottom: 2px;
+}
+.about-us-headline p {
+    width: 900px;
 }
