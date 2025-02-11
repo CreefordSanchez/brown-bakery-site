@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
         <link rel="stylesheet" href="./src/css/header-footer.css" media="all">
-        <link rel="stylesheet" href="./src/css/content.css">
+        <link rel="stylesheet" href="./src/css/product-page.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./src/js/product-page.js" defer></script>
         <title>Whiskit</title>
@@ -92,9 +92,30 @@
                 </div>
             </section>
 
+            <div class="modal-overlay"></div>
             <div class="modal-container">
-                
-                <button class="modal-close-button">Close</button>
+                <div class="modal-box">
+                    <div class="modal-image-container">
+                        <img class="modal-image">
+                    </div>
+                    <div class="modal-content-container">
+                        <div>
+                            <button class="modal-close-button">X</button>
+                        </div>
+                        <div class="modal-title">
+                            <p>TITLE</p>
+                        </div>
+                        <div class="modal-sub-title">
+                            <p>SUBTITLE</p>
+                        </div>
+                        <div class="modal-description">
+                            <p>DESCRIPTION</p>
+                        </div>
+                        <div>
+                            <button class="modal-add-button">ADD</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <footer class="section-space">
