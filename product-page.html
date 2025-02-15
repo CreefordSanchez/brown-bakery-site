@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
         <link rel="stylesheet" href="./src/css/header-footer.css" media="all">
         <link rel="stylesheet" href="./src/css/product-page.css">
+        <link rel="stylesheet" href="./src/css/product-page-modal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./src/js/product-page.js" defer></script>
         <title>Whiskit</title>
@@ -48,33 +49,35 @@
                             </div>
                         </div>
                         <div class="product-list">
-                            <div class="product-item">
+                            <div class="product-item show-info">
                                 <img class="product-image" src="src/media/image/products/product-item1.jpg">
                                 <div class="product-description">
                                     <div class="product-name">
-                                        <p>Original Cat</p>
+                                        <p>Poop</p>
                                     </div>
                                     <div class="product-sub-description">
                                         <p class="product-price">$22.40</p>
                                         <p class="product-serving">(20 Kilograms)</p>
+                                        <p class="product-hidden-description">fawf awjbfiajfbiwbfiuawbfuiawbfuw</p>
                                     </div>
                                     <button class="product-preview-button">View Item</button>
                                 </div>
                             </div>
-                            <div class="product-item">
+                            <div class="product-item show-info">
                                 <img class="product-image" src="src/media/image/products/product-item2.jpg">
                                 <div class="product-description">
                                     <div class="product-name">
-                                        <p>Original Cat</p>
+                                        <p>Balls</p>
                                     </div>
                                     <div class="product-sub-description">
                                         <p class="product-price">$22.40</p>
                                         <p class="product-serving">(20 Kilograms)</p>
+                                        <p class="product-hidden-description">poop</p>
                                     </div>
                                     <button class="product-preview-button">View Item</button>
                                 </div>
                             </div>
-                            <div class="product-item">
+                            <div class="product-item show-info">
                                 <img class="product-image" src="src/media/image/products/product-item3.jpg">
                                 <div class="product-description">
                                     <div class="product-name">
@@ -83,6 +86,7 @@
                                     <div class="product-sub-description">
                                         <p class="product-price">$22.40</p>
                                         <p class="product-serving">(20 Kilograms)</p>
+                                        <p class="product-hidden-description">8=======></p>
                                     </div>
                                     <button class="product-preview-button">View Item</button>
                                 </div>
@@ -96,24 +100,29 @@
             <div class="modal-container">
                 <div class="modal-box">
                     <div class="modal-image-container">
-                        <img class="modal-image">
+                        <img class="modal-image" src="src/media/image/products/product-item1.jpg">
                     </div>
                     <div class="modal-content-container">
+                        <button class="modal-close-button">X</button>
+                        <p class="modal-title">Cinnamon Roll - Extreme Edition</p>
                         <div>
-                            <button class="modal-close-button">X</button>
+                            <p class="modal-price">$19.99</p>
+                            <p class="modal-weight">Weight : 20kg</p>
                         </div>
-                        <div class="modal-title">
-                            <p>TITLE</p>
+                        <div class="modal-size-container">
+                            <p class="modal-product-size">Size : </p>
+                            <button class="modal-size-button">SM</button>
+                            <button class="modal-size-button">MD</button>
+                            <button class="modal-size-button">XL</button>
                         </div>
-                        <div class="modal-sub-title">
-                            <p>SUBTITLE</p>
+                        <div class="modal-quantity-container">
+                            <button class="modal-quantity-button">-</button>
+                            <p class="modal-quantity-amount">1</p>
+                            <button class="modal-quantity-button">+</button>
                         </div>
-                        <div class="modal-description">
-                            <p>DESCRIPTION</p>
-                        </div>
-                        <div>
-                            <button class="modal-add-button">ADD</button>
-                        </div>
+                        <div class="modal-description"></div>
+                        
+                        <button class="modal-add-button">Add To Cart</button>
                     </div>
                 </div>
             </div>
