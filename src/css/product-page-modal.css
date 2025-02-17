@@ -1,0 +1,178 @@
+.modal-disappear-opacity {
+    opacity: 0;
+}
+
+.modal-appear-opacity {
+    opacity: 1;
+}
+
+.disappear-modal {
+    display: none;
+}
+
+.appear-modal {
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(39, 39, 39, 0.853);
+    transition: opacity 0.15s ease-in-out;
+}
+
+.modal-container {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 2;
+    top: calc(50% - 450px / 2); /* height/2 */
+    left: calc(50% - 1000px / 2); /* width/2 */
+    width: 1000px;
+    height: 450px;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.modal-box {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-image-container {
+    overflow: hidden;
+    min-width: 0;
+    margin: 25px;
+    border-radius: 2px;
+}
+
+.modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.modal-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px 0px 2px 0px;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.30);
+    padding: 8px 14px;
+    overflow: hidden;
+}
+
+.modal-title {
+    color: rgb(75, 33, 8);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.modal-price {
+    display: inline-block;
+    color: rgb(57, 25, 7);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.modal-weight {
+    display: inline-block;
+    color: rgb(25, 25, 25);
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.modal-size-container {
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.modal-product-size {
+    color: rgb(25, 25, 25);
+    font-size: 18px;
+}
+
+.modal-quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.modal-quantity-amount {
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 18px;
+    margin: 0px 10px;
+}
+
+.modal-description {
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: no-wrap;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+/* Buttons */
+
+.modal-size-button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin: 0px 6px;
+    transition: 0.1s ease;
+}
+
+.modal-quantity-button {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: 0.1s ease;
+}
+
+.modal-quantity-button:hover,
+.modal-size-button:hover {
+    background-color: rgb(27, 14, 9);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.modal-add-button {
+    width: 100%;
+    align-self: center;
+    background-color: rgb(230, 13, 13);
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 6px;
+    padding: 12px 10px;
+    margin-bottom: 14px;
+    transition: ease 0.1s;
+}
+
+.modal-add-button:hover {
+    background-color: rgb(161, 14, 14);
+}
+
+
+.modal-close-button {
+    align-self: flex-end;
+}
