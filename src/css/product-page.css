@@ -1,0 +1,105 @@
+@import url(./utility.css);
+
+.product-content {
+    height: calc(100vh - 72px);
+    background-image: url(../media/image/bakery-items1.jpg);
+    background-position: center;
+    background-size: 35%;
+}
+
+.product-content .container {
+    height: 100%;
+}
+
+.background-overlay {
+    background-color: #8e4508db;
+    height: 100%;
+}
+
+.product-category {
+    height: 90px;
+}
+
+.product-category-name {
+    justify-items: center;
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.product-list {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: calc(100% - 90px);
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 8px;
+    background-color: var(--app-white);
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Conforming to grid-cell size */
+    min-width: 0; /* Conforming to grid-cell size */
+}
+
+.product-image {
+    flex: 3;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-description {
+    flex: 1;
+    padding: 5px 0px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+
+.product-sub-description {
+    margin: 5px 0px;
+}
+
+.product-hidden-description {
+    display: none;
+}
+
+.product-price {
+    display: inline-block;
+    color: rgb(53, 53, 53);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-serving {
+    display: inline-block;
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-preview-button {
+    background-color: white;
+    width: 35%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    margin-top: 5px;
+    padding: 5px 0px;
+    transition: 0.1s ease-in;
+}
+
+.product-preview-button:hover {
+    background-color: rgb(231, 231, 231);
+}
