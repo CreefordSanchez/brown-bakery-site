@@ -34,6 +34,7 @@ html {
 header {
     background-color: var(--app-black);
     transition: 0.5s ease;
+    width: 100%;
 }
 
 header .container {
@@ -58,14 +59,14 @@ nav ul {
 }
 
 nav a {
-    color: var(--app-black);
+    color: var(--app-white);
 }
 
 .header-buttons {
     justify-self: end;
     display: flex;
     gap: 20px;
-    color: #000000;
+    color: var(--app-white);
     font-size: 20px;
 }
 
